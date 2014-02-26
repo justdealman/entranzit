@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Etranzit</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<link href="./css/style.css" rel="stylesheet" type="text/css" title="compact">
+	<link href="./css/uniform.css" rel="stylesheet" type="text/css" title="compact">
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	<script type="text/javascript" src="./js/easing.js"></script>
+	<script type="text/javascript" src="./js/uniform.js"></script>
+	<script type="text/javascript" src="./js/dynamic.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">
+			<div>
+				<div>
+					<a href="#"><img src="./img/logo.png" width="151" height="50" alt=""></a>
+					<p>Территориальная сетевая организация</p>
+				</div>
+			</div>
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a href="#">Передача электроэнергии</a></li>
+				<li class="active"><a href="#">Техническое присоединение</a></li>
+				<li><a href="#">Раскрытие информации</a></li>
+				<li><a href="#">Закупки</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<h1>Технологическое присоединение</h1>
+			<div class="category">
+				<h5>Выберите Вашу категорию:</h5>
+				<p><span title="category1"><input type="radio" name="r1">Регистрация физических лиц</p>
+				<p><span title="category2"><input type="radio" name="r1">Регистрация индивидуальных предпринимателей</p>
+				<p><span title="category3"><input type="radio" name="r1">Регистрация юридических лиц</p>
+			</div>
+			<div class="form">
+				<div class="switch category1">
+					<p><span>Email</span> <input type="text"> <em>Если у вас нет электронного адреса почты зарегистрируйте его на mail.ru или yandex.ru.</em></p>
+					<p><span>Фамилия</span> <input type="text"></p>
+					<p><span>Имя</span> <input type="text"></p>
+					<p><span>Отчество</span> <input type="text"> <em>Если оно есть в документе, удостоверяющем личность</em></p>
+					<p><span>Документ подтверждающий личность</span> <input type="text"></p>
+					<p><span>Серия и номер документа утверждающего личность</span> <input type="text"></p>
+					<p><span>Дата выдачи</span> <input type="text"></p>
+					<p><span>Адрес регистрации по прописке</span> <input type="text"></p>
+					<p><span>Фактический адрес проживания</span> <input type="text"></p>
+					<p><span>Контактный телефон (мобильный или домашний)</span> <input type="text"></p>
+					<div class="files">
+						<h5>Необходимые документы</h5>
+						<p><span>Скан паспорта (вторая страница)</span> <input type="file"></p>
+						<p><span>Скан паспорта (прописка)</span> <input type="file"></p>
+					</div>
+				</div>
+				<div class="switch category2">
+					<p><span>Фамилия</span> <input type="text"></p>
+					<p><span>Имя</span> <input type="text"></p>
+					<p><span>Email</span> <input type="text"> <em>Если у вас нет электронного адреса почты зарегистрируйте его на mail.ru или yandex.ru.</em></p>
+					<p><span>Отчество</span> <input type="text"> <em>Если оно есть в документе, удостоверяющем личность</em></p>
+					<p><span>Документ подтверждающий личность</span> <input type="text"></p>
+					<p><span>Фактический адрес проживания</span> <input type="text"></p>
+					<p><span>Контактный телефон (мобильный или домашний)</span> <input type="text"></p>
+					<div class="files">
+						<h5>Необходимые документы</h5>
+						<p><span>Скан паспорта (прописка)</span> <input type="file"></p>
+					</div>
+				</div>
+				<div class="switch category3">
+					<p><span>Адрес регистрации по прописке</span> <input type="text"></p>
+					<p><span>Фактический адрес проживания</span> <input type="text"></p>
+					<p><span>Контактный телефон (мобильный или домашний)</span> <input type="text"></p>
+					<p><span>Email</span> <input type="text"> <em>Если у вас нет электронного адреса почты зарегистрируйте его на mail.ru или yandex.ru.</em></p>
+					<p><span>Фамилия</span> <input type="text"></p>
+					<p><span>Имя</span> <input type="text"></p>
+					<p><span>Отчество</span> <input type="text"> <em>Если оно есть в документе, удостоверяющем личность</em></p>
+					<p><span>Дата выдачи</span> <input type="text"></p>
+					<div class="files">
+						<h5>Необходимые документы</h5>
+						<p><span>Скан паспорта (вторая страница)</span> <input type="file"></p>
+					</div>
+				</div>
+				<div class="options">
+					<p class="agreement"><input type="checkbox"> В соответствии с Федеральным законом от 27 июня 2006 года № 152 ФЗ «О персональных данных» даю согласие на обработку моих персональных данных, необходимых для осуществления технологического присоединения энергопринимающих устройств</p>
+					<p class="captcha"><span>Введите буквы с картинки</span> <em><img src="./img/captcha.png" width="79" height="31" alt=""></em> <input type="text"></p>
+				</div>
+				<button class="submit">отправить</button>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="footer">
+		<div>
+			<p>© 1997 — 2014, Энергия транзит</p>
+			<div>
+				<p><span>Телефон:</span> (3852) 22-90-41</p>
+				<p><span>Факс:</span> (3852) 22-90-41</p>
+				<p><span>Email:</span> <a href="mailto:kuchmina@e-tranzit.ru">kuchmina@e-tranzit.ru</a></p>
+			</div>
+			<p>Разработано в <a href="http://letsrock.pro" target="_blank">Let’s Rock</a></p>
+		</div>
+	</div>
+</body>
+</html>
