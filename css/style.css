@@ -501,30 +501,24 @@ button::-moz-focus-inner {
 	margin:0 0 16px;
 }
 .disclosure > div > div h6 {
-	height:40px;
 	font-size:12px;
 	line-height:20px;
 	font-weight:normal;
 	padding:0;
-	margin:0;
+	margin:0 0 8px;
 }
 .disclosure > div > div h6 a {
-	text-decoration:none;
-}
-.disclosure > div > div h6 a img {
 	display:inline-block;
-	vertical-align:top;
-	padding:0 11px 0 0;
+	padding:6px 0 6px 40px;
 }
-.disclosure > div > div h6 a span {
-	display:inline-block;
-	max-width:843px;
-	vertical-align:top;
-	text-decoration:underline;
-	margin:6px 0 0;
+.disclosure > div > div h6 a.pdf {
+	background:url('../img/pdf_icon.png') no-repeat left center;
 }
-.disclosure > div > div h6 a:hover span {
-	text-decoration:none;
+.disclosure > div > div h6 a.xls {
+	background:url('../img/xls_icon.png') no-repeat left center;
+}
+.disclosure > div > div h6 a.doc {
+	background:url('../img/doc_icon.png') no-repeat left center;
 }
 .text {
 	margin:39px 360px 24px 40px;
@@ -603,7 +597,7 @@ button::-moz-focus-inner {
 	-moz-transition:all 0.1s ease-in-out;
 	-o-transition:all 0.1s ease-in-out;
 }
-.form p input:focus {
+.form p input[type="text"]:focus {
 	background-position:0 -30px;
 }
 .form p em {
@@ -641,7 +635,9 @@ button::-moz-focus-inner {
 	background:#ffffff;
 }
 .form .options {
+	position:relative;
 	width:620px;
+	min-height:64px;
 	margin:24px 0 0 50px;
 }
 .form .options p {
@@ -753,4 +749,30 @@ button::-moz-focus-inner {
 	position:absolute;
 	top:26px;
 	left:320px;
+}
+
+/* Qaptcha */
+
+.qaptcha {
+	position:absolute;
+	left:360px;
+	top:25px;
+}
+.qaptcha .bgSlider {
+	width:119px;
+	height:37px;
+	border:1px solid #ad282b;
+	background-color:#ad282b;
+}
+.qaptcha .Slider {
+	width:51px;
+	height:37px;
+	background:url('../img/draggable_qaptcha.png') no-repeat left top;
+	cursor:e-resize;
+	position:relative;
+	top:0;
+	left:0
+}
+.qaptcha .TxtStatus {
+	display:none;
 }
