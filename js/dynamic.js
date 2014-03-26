@@ -12,4 +12,9 @@
 		return false;
 	}).filter(':first').click();
 	$('.team > div > div:last-child').css({'margin-bottom': '0'});
+	$('.files .onemore').bind('click', function() {
+		$(this).before('<p><span>Еще один документ</span> <input type="file"></p>');
+		$(this).parent().find('input[type="file"]').uniform();
+		return false;
+	});
 });
