@@ -17,4 +17,12 @@
 		$(this).prev().find('input[type="file"]').uniform();
 		return false;
 	});
+	$('.user li h5').each(function() {
+		if ( $(this).children().height() == 18 ) {
+			$(this).children().css({'margin-top': '9px'});
+		}
+	});
+	$('.requestlist th[colspan="2"]').css({'text-align': 'center'});
+	$('select').selectbox();
+	$('.requestlist tr:nth-child(odd) td').css({'background': '#f7f7f7'});
 });
