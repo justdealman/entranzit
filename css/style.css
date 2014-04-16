@@ -747,6 +747,13 @@ button::-moz-focus-inner {
 	width:60px;
 	margin:0 12px 0 0;
 }
+.footer > div > p > span {
+	float:none;
+	width:auto;
+	padding:0 0 0 14px;
+	margin:4px 0 0;
+	background:url('../img/sitemap_icon.png') no-repeat left 6px;
+}
 .footer > div > div {
 	position:absolute;
 	top:26px;
@@ -1127,6 +1134,46 @@ button::-moz-focus-inner {
 .request .uploaded li a:hover p {
 	text-decoration:underline;
 }
+.request .folders {
+	margin:5px 0 41px;
+}
+.request .folders li {
+	display:inline-block;
+	width:244px;
+	text-align:center;
+	vertical-align:top;
+	margin:0 33px 26px 0;
+}
+.request .folders li a {
+	display:block;
+	text-decoration:none;
+}
+.request .folders li div {
+	position:relative;
+	width:244px;
+	height:172px;
+	margin:0 0 17px;
+}
+.request .folders li div img {
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	max-width:244px;
+	max-height:172px;
+	margin:auto;
+}
+.request .folders li p {
+	color:#d34c46;
+	font-size:16px;
+	line-height:20px;
+	font-family:'Segoe UI', sans-serif;
+	margin:0;
+}
+.request .folders li a:hover p {
+	text-decoration:underline;
+}
 .request .new {
 	position:relative;
 	width:820px;
@@ -1274,6 +1321,34 @@ button::-moz-focus-inner {
 	width:41px;
 	height:32px;
 	background:url('../img/requestlist_remove_span.png') no-repeat center 8px;
+}
+.navigator {
+	clear:both;
+	overflow:hidden;
+	color:#ad282b;
+	font-size:12px;
+	line-height:15px;
+	font-family:'Segoe UI', sans-serif;
+	margin:0 40px 35px;
+}
+.navigator a {
+	color:#ad282b;
+}
+.navigator p {
+	float:left;
+	margin:0;
+}
+.navigator ul {
+	float:right;
+	margin:0;
+}
+.navigator ul li {
+	display:inline-block;
+	vertical-align:top;
+	margin:0 0 0 36px;
+}
+.navigator ul li:first-child {
+	margin-left:0;
 }
 
 /* Selectbox */
