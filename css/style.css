@@ -529,8 +529,8 @@ button::-moz-focus-inner {
 	margin:0 0 20px;
 }
 .category {
-	width:560px;
-	padding:25px 40px 24px 40px;
+	width:580px;
+	padding:25px 20px 24px 40px;
 	margin:0 0 27px;
 	background:#ebebeb;
 }
@@ -574,7 +574,7 @@ button::-moz-focus-inner {
 	display:block;
 	margin:0 0 3px;
 }
-.form p input[type="text"] {
+.form p input[type="text"], .form p textarea {
 	position:relative;
 	display:inline-block;
 	width:384px;
@@ -599,6 +599,11 @@ button::-moz-focus-inner {
 }
 .form p input[type="text"]:focus {
 	background-position:0 -30px;
+}
+.form p textarea {
+	min-height:169px;
+	background:#f0f0f0 url('../img/form_textarea.png') repeat-x top;
+	resize:none;
 }
 .form p em {
 	display:inline-block;
@@ -706,6 +711,90 @@ button::-moz-focus-inner {
 .form button.onemore {
 	margin:7px 0 16px;
 }
+.survey {
+	width:560px;
+	padding:11px 0 0;
+	margin:0 0 24px 40px;
+}
+.survey > div {
+	margin:0 0 25px;
+}
+.survey p {
+	color:#000000;
+	font-size:12px;
+	line-height:24px;
+	font-family:'Segoe UI', sans-serif;
+	margin:0 0 17px;
+}
+.survey input[type="text"] {
+	position:relative;
+	display:block;
+	width:355px;
+	color:#333333;
+	font-size:14px;
+	font-family:'Segoe UI', sans-serif;
+	vertical-align:top;
+	padding:5px 7px 6px;
+	margin:9px 0 0;
+	background:url('../img/form_input.png') repeat-x top;
+	border:1px solid #999999;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+	-webkit-box-shadow:inset 0 0 2px #ffffff;
+	-moz-box-shadow:inset 0 0 2px #ffffff;
+	box-shadow:inset 0 0 2px #ffffff;
+	behavior:url('./pie.htc');
+	transition:all 0.1s ease-in-out;
+	-webkit-transition:all 0.1s ease-in-out;
+	-moz-transition:all 0.1s ease-in-out;
+	-o-transition:all 0.1s ease-in-out;
+}
+.survey input[type="text"]:focus {
+	background-position:0 -30px;
+}
+.survey ul {
+	margin:0;
+}
+.survey ul li {
+	color:#666666;
+	font-size:12px;
+	line-height:24px;
+	padding:0 0 0 29px;
+	margin:0 0 6px;
+}
+.survey ul li .radio {
+	float:left;
+	margin:4px 0 0 -29px;
+}
+.survey button {
+	color:#ffffff;
+	font-size:13px;
+    line-height:18px;
+	font-weight:normal;
+	font-family: 'Segoe UI', sans-serif;
+	text-shadow:1px 1px 1px #ad282b;
+    cursor:pointer;
+	padding:4px 28px 8px;
+	margin:14px 0 0 0;
+	background:url('../img/select_file.png') repeat-x top;
+	border:1px solid #ad282b;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+	-webkit-box-shadow:inset 0 0 3px #d34c46;
+	-moz-box-shadow:inset 0 0 3px #d34c46;
+	box-shadow:inset 0 0 3px #d34c46;
+	behavior:url('./pie.htc');
+	transition:all 0.1s ease-in-out;
+	-webkit-transition:all 0.1s ease-in-out;
+	-moz-transition:all 0.1s ease-in-out;
+	-o-transition:all 0.1s ease-in-out;
+}
+.survey button:hover {
+	background-position:0 -30px !important;
+}
+
 
 /* Footer */
 
@@ -953,8 +1042,50 @@ button::-moz-focus-inner {
 .settings button:hover {
 	background-position:0 -30px !important;
 }
+.message {
+	position:relative;
+	width:740px;
+	font-family:'Segoe UI', sans-serif;
+	padding:24px 100px 23px 40px;
+	margin:-6px 0 26px;
+}
+.message.type1 {
+	background:#fff5d9;
+}
+.message.type2 {
+	background:#ecf7fa;
+}
+.message .close {
+	position:absolute;
+	right:12px;
+	top:11px;
+	display:block;
+	width:17px;
+	height:18px;
+	cursor:pointer;
+}
+.message.type1 .close {
+	background:url('../img/message_type1_close.png') no-repeat left top;
+}
+.message.type2 .close {
+	background:url('../img/message_type2_close.png') no-repeat left top;
+}
+.message h5 {
+	color:#333333;
+	font-size:18px;
+	line-height:24px;
+	font-weight:normal;
+	padding:0;
+	margin:0 0 8px;
+}
+.message p {
+	color:#333333;
+	font-size:14px;
+	line-height:20px;
+	margin:0 0 8px;
+}
 .user {
-	margin:63px 0 6px 40px;
+	margin:30px 0 6px 40px;
 }
 .user li {
 	position:relative;
@@ -963,7 +1094,7 @@ button::-moz-focus-inner {
 	height:210px;
 	text-align:center;
 	vertical-align:top;
-	margin:0 15px 18px 0;
+	margin:0 15px 19px 0;
 	border:1px solid #999999;
 	-webkit-border-radius:4px;
 	-moz-border-radius:4px;
@@ -1014,6 +1145,28 @@ button::-moz-focus-inner {
 .user li a:hover h5 span {
 	text-decoration:underline;
 }
+.declined {
+	width:740px;
+	font-family:'Segoe UI', sans-serif;
+	padding:24px 100px 23px 40px;
+	margin:-6px 0 -4px;
+	background:#ffdbdb;
+}
+.declined h5 {
+	color:#333333;
+	font-size:18px;
+	line-height:24px;
+	font-weight:normal;
+	padding:0;
+	margin:0 0 12px;
+}
+.declined p {
+	color:#333333;
+	font-size:14px;
+	line-height:20px;
+	margin:0 0 8px;
+}
+
 .request {
 	margin:34px 0 24px 40px;
 }
@@ -1212,6 +1365,7 @@ button::-moz-focus-inner {
 	display:block;
 	width:81px;
 	height:114px;
+	text-decoration:none;
 }
 .request .new ul li img {
 	position:absolute;
@@ -1223,9 +1377,33 @@ button::-moz-focus-inner {
 	max-height:114px;
 	margin:auto;
 }
+.request .new ul li.archive {
+	border:1px solid transparent;
+}
+.request .new ul li.archive a {
+	background:url('../img/archive_icon.png') no-repeat center 16px;
+}
+.request .new ul li.archive p {
+	position:absolute;
+	left:0;
+	top:84px;
+	width:81px;
+	color:#d34c46;
+	font-size:14px;
+	line-height:20px;
+	font-weight:bold;
+	text-align:center;
+	margin:0;
+}
+.request .new ul li.archive a:hover p {
+	text-decoration:underline;
+}
 .requestlist {
 	width:100%;
 	margin:32px 0 24px;
+}
+.requestlist.complete {
+	width:428px;
 }
 .requestlist td {
 	color:#000000;

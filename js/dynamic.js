@@ -25,4 +25,9 @@
 	$('.requestlist th[colspan="2"]').css({'text-align': 'center'});
 	$('select').selectbox();
 	$('.requestlist tr:nth-child(odd) td').css({'background': '#f7f7f7'});
+	$('.message').append('<span class="close"></span>');
+	$('.message .close').bind('click', function() {
+		$(this).parent().fadeOut(0);
+		return false;
+	})
 });
