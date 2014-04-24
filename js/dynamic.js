@@ -29,5 +29,38 @@
 	$('.message .close').bind('click', function() {
 		$(this).parent().fadeOut(0);
 		return false;
-	})
+	});
+	var bh = 0;
+	$('div.modal').each(function() {
+		$(this).append('<span class="close"></span>');
+		var mh = ($(this).height()+50)/2;
+		$(this).css({'margin-top': -mh+'px'});
+	});
+	$('div.modal .close').bind('click', function() {
+		$(this).parent().fadeOut(250);
+		$('.fade').fadeOut(250);
+		$('body').css({'position': 'static', 'top': '0', 'overflow-y': 'auto'});
+		$('body').scrollTop(bh);
+		return false;
+	});
+	$('.fade').bind('click', function() {
+		$('div.modal, .fade').fadeOut(250);
+		$('body').css({'position': 'static', 'top': '0', 'overflow-y': 'auto'});
+		$('body').scrollTop(bh);
+		return false;
+	});
+	$(this).keydown(function(eventObject){
+		if (eventObject.which == 27) {
+			$('.fade, div.modal').fadeOut(250);
+			$('body').css({'position': 'static', 'top': '0', 'overflow-y': 'auto'});
+			$('body').scrollTop(bh);
+		}
+	});
+	$('button.approve, button.reject').bind('click', function() {
+		var target = $(this).attr('class');
+		$('.fade, .modal.'+target).fadeIn(250);
+		bh = $('body').scrollTop();
+		$('body').css({'position': 'fixed', 'top': -bh+'px', 'overflow-y': 'scroll'});
+		return false;
+	});
 });
